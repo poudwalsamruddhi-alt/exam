@@ -8,12 +8,11 @@ pipeline {
     }
 
     stages {
-
         stage('Checkout') {
-            steps {
-                git 'https://github.com/poudwalsamruddhi-alt/exam.git'
-            }
-        }
+    steps {
+        checkout scm
+    }
+}
 
         stage('Show Commit ID') {
             steps {
